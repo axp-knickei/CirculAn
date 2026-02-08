@@ -1,0 +1,18 @@
+# Data and Results
+data/
+results*/
+*.faa
+*.csv
+*.png
+*.svg
+*.pdf
+*.json
+*.tsv
+*.def
+
+# Python / UV
+.venv/
+__pycache__/
+*.py[cod]
+.python-version
+uv.lock

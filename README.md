@@ -311,8 +311,8 @@ This project is released under the MIT License, allowing for both academic and c
 
 **Developed by**: Alex  
 **Development Period**: 2026  
-**Purpose**: Learning to make genome mapping of whole genome sequence data 
-**Target Users**: A beginner who want to test and inspect with their genomic dataset
+**Purpose**: Learning to make genome mapping of whole genome sequence data  
+**Target Users**: A beginner who want to test and inspect with their genomic dataset  
 
 **Contributions and feedback are welcome!** This toolkit continues to evolve
 

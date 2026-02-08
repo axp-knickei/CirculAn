@@ -1,6 +1,6 @@
 # Circular Genome Mapping & Functional Annotation Pipeline
 
-A comprehensive and user-friendly toolkit designed specifically for researchers working with bacterial genomes. This pipeline creates publication-quality circular genome visualizations and functional annotation analyses suitable for high-impact journals such as *Nature*, *ISME Journal*, *Science*, and *Cell*.
+A comprehensive and user-friendly toolkit designed specifically for researchers working with bacterial genomes. This pipeline creates publication-quality circular genome visualizations and functional annotation analyses.
 
 ## 🎯 Who This Tool Is For
 
@@ -20,7 +20,7 @@ This toolkit is specifically designed for:
 - **Automatic scaling** optimized for different genome sizes
 
 ### 📊 Functional Analysis Tools
-- **Nature-style donut charts** for COG/eggNOG functional category distributions
+- **Donut charts** for COG/eggNOG functional category distributions
 - **Professional color palettes** designed for scientific publications
 - **Statistical summaries** of functional annotations
 - **Multiple visualization options** for different presentation needs
@@ -139,7 +139,7 @@ uv run python create_functional_table.py \
 
 **Part C: Create Publication-Quality Figures:**
 
-**Option 1: Nature-Style Donut Chart**
+**Option 1: Donut Chart**
 ```bash
 uv run python plot_nature_figure.py \
    --input functional_summary.csv \
@@ -264,7 +264,7 @@ Circular genome maps are visual representations of bacterial chromosomes that di
 - **Nucleotide composition patterns (GC content/skew)**
 - **Evolutionary relationships between genomic regions**
 
-These visualizations help researchers identify:
+These visualizations may help researchers identify:
 - **Replication origin and terminus regions**
 - **Genomic islands and horizontal gene transfer events**
 - **Metabolic capabilities and lifestyle adaptations**
@@ -286,8 +286,14 @@ This standardized system enables meaningful comparisons between different bacter
 If you use this toolkit in your research, please cite:
 
 ```
-Circular Genome Mapping & Functional Annotation Pipeline
-Genomics NGS Analysis Team, Taiwan © 2017-2018
+@software{netpharmpy2025,
+  author = {Alex Prima},
+  title = {CirculAn: CirculAn: An automated Python toolkit for high-resolution circular genome mapping and functional annotation visualization},
+  year = {2026},
+  url = {https://github.com/axp-knickei/CirculAn},
+  version = {0.1.0},
+  doi={doi.org/10.xxx/zenodo.xxx}
+}
 ```
 
 **Additional citations to consider:**
@@ -305,19 +311,18 @@ This project is released under the MIT License, allowing for both academic and c
 
 ## 👥 About This Project
 
-**Developed by**: Genomics NGS Analysis Team, Taiwan  
-**Development Period**: 2017-2018  
-**Purpose**: To provide accessible, high-quality genome visualization tools for the microbiology research community  
-**Target Users**: Researchers needing publication-ready figures without extensive bioinformatics expertise  
+**Developed by**: Alex
+**Development Period**: 2026  
+**Purpose**: Learning to make genome mapping of whole genome sequence  
+**Target Users**:   
 
-**Contributions and feedback are welcome!** This toolkit continues to evolve based on user needs and emerging visualization standards in scientific publishing.
+**Contributions and feedback are welcome!** This toolkit continues to evolve
 
 ---
 
 ## 🔄 Version History
 
-**Version 1.0** (2017-2018): Initial release with core circular mapping functionality  
-**Current Version**: Enhanced with additional visualization options and improved user experience  
+**Version 1.0**: Initial release with core circular mapping functionality 
 
 ---
 

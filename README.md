@@ -1,38 +1,34 @@
 [![DOI](https://zenodo.org/badge/1152568231.svg)](https://doi.org/10.5281/zenodo.18522435)
 
-https://zenodo.org/badge/1152568231.svg
-
 # Circular Genome Mapping & Functional Annotation Pipeline
 
-A comprehensive and user-friendly toolkit designed specifically for researchers working with bacterial genomes. This pipeline creates publication-quality circular genome visualizations and functional annotation analyses.
+A toolkit designed specifically for researchers working with bacterial genomes. This pipeline creates circular genome visualizations and functional annotation analyses.
 
 ## 🎯 Who This Tool Is For
 
 This toolkit is specifically designed for:
 - **Microbiologists and environmental microbiologists** analyzing bacterial genomes
-- **Genomics researchers** who need professional visualizations for publications
-- **Bioinformatics beginners** who may not have extensive programming experience
+- **Genomics researchers** who need visualizations of the genomic DNA
 - **Research groups** working with bacterial isolates from environmental or clinical samples
 
 ## 🌟 Key Features
 
-### 🧬 Circular Genome Visualization
-- **High-resolution circular maps** with customizable color schemes
+### Circular Genome Visualization
+- **Circular maps** with customizable color schemes
 - **GC content and GC skew analysis** with automatic calculation and visualization
 - **Gene annotation display** with color-coded functional categories
-- **Publication-ready output** in multiple formats (PNG, SVG, PDF)
+- **Adjusted graphic output** in multiple formats (PNG, SVG, or PDF)
 - **Automatic scaling** optimized for different genome sizes
 
-### 📊 Functional Analysis Tools
+### Functional Analysis Tools
 - **Donut charts** for COG/eggNOG functional category distributions
-- **Professional color palettes** designed for scientific publications
+- **Color palettes** designed for contrast view of elements
 - **Statistical summaries** of functional annotations
 - **Multiple visualization options** for different presentation needs
 
-### 🛠 Data Processing Utilities
+### Data Processing Utilities
 - **Protein sequence extraction** from Excel annotation files
-- **EggNOG-mapper results parsing** with comprehensive summarization
-- **Data validation** and error checking to ensure reliable results
+- **EggNOG-mapper results parsing** with summarization. The EggNOG data need to be analyzed separately by user
 - **Flexible input/output formats** compatible with common bioinformatics tools
 
 ---
@@ -46,8 +42,6 @@ This toolkit is specifically designed for:
 - **Python**: Version 3.8 or higher
 - **Memory**: Minimum 4GB RAM (8GB+ recommended for large genomes)
 - **Storage**: At least 1GB free space for installation and output files
-
-**No Programming Experience Required**: All tools can be run using simple copy-and-paste commands.
 
 ### Installing the Required Tools
 
@@ -68,7 +62,7 @@ This toolkit uses `uv` for easy dependency management (similar to how app stores
 
 ## 🚀 Step-by-Step Guide
 
-This section walks you through the entire process from raw data to publication-ready figures.
+This section walks you through the entire process from raw data to circular genome figures.
 
 ### Step 1: Prepare Your Input Files
 
@@ -124,13 +118,13 @@ uv run python circular_genome_map_publication.py \
 
 **Output Files:**
 - `circular_map.png`: High-resolution image for presentations
-- `circular_map.svg`: Vector format for publications (infinite resolution)
+- `circular_map.svg`: Vector format for printing (infinite resolution)
 - `circular_map.pdf`: PDF format for journal submissions
 - `gc_content.txt`: Tabular data for further analysis
 
 ### Step 4: Functional Annotation Analysis (Optional)
 
-**Part A: Run EggNOG-mapper** (External tool, not included)
+**Part A: Run EggNOG-mapper** (**External tool, not included!!**)
 - Upload your `proteins.faa` file to the [EggNOG-mapper web server](http://eggnog-mapper.embl.de/)
 - Download the results as a tab-separated file
 
@@ -141,7 +135,7 @@ uv run python create_functional_table.py \
    --output functional_summary.csv
 ```
 
-**Part C: Create Publication-Quality Figures:**
+**Part C: Create eggNOG pie chart:**
 
 **Option 1: Donut Chart**
 ```bash
@@ -163,10 +157,10 @@ uv run python generate_scientific_figure.py \
 
 ### Interpreting Circular Maps
 
-- **Outer Ring**: Gene annotations color-coded by functional category
-- **Middle Ring**: GC content (higher values in red, lower in blue)
-- **Inner Ring**: GC skew (indicative of replication origin and terminus)
-- **Scale Marks**: Genome position in kilobases (kb)
+- **Outer Ring 1**: Blue colored ring, gene annotations for forward CDS
+- **Outer Ring 2**: Red colored ring, gene annotations for reverse CDS
+- **Inner Ring 1**: Black colored histogram ring, GC Content 
+- **Inner Ring 2**: Green and purple colored histogram ring, GC Skew (indicative of replication origin and terminus)
 
 ### Functional Category Colors
 
@@ -225,7 +219,7 @@ done < genome_list.txt
 
 ---
 
-## 🆘 Troubleshooting & FAQ
+## Troubleshooting & FAQ
 
 ### Common Issues and Solutions
 
@@ -258,7 +252,7 @@ A: Use the SVG output format and import it into vector graphics software (Adobe 
 
 ---
 
-## 📚 Scientific Background
+## Scientific Background
 
 ### What Are Circular Genome Maps?
 
@@ -285,14 +279,14 @@ This standardized system enables meaningful comparisons between different bacter
 
 ---
 
-## 📄 Citation Information
+## Citation Information
 
 If you use this toolkit in your research, please cite:
 
 ```
 @software{CirculAn2025,
   author = {Alex Prima},
-  title = {CirculAn: CirculAn: An automated Python toolkit for high-resolution circular genome mapping and functional annotation visualization},
+  title = {CirculAn: An automated Python toolkit for high-resolution circular genome mapping and functional annotation visualization},
   year = {2026},
   url = {https://github.com/axp-knickei/CirculAn},
   version = {0.1.0},
@@ -317,8 +311,8 @@ This project is released under the MIT License, allowing for both academic and c
 
 **Developed by**: Alex  
 **Development Period**: 2026  
-**Purpose**: Learning to make genome mapping of whole genome sequence  
-**Target Users**:   
+**Purpose**: Learning to make genome mapping of whole genome sequence data 
+**Target Users**: A beginner who want to test and inspect with their genomic dataset
 
 **Contributions and feedback are welcome!** This toolkit continues to evolve
 
@@ -326,7 +320,7 @@ This project is released under the MIT License, allowing for both academic and c
 
 ## 🔄 Version History
 
-**Version 1.0**: Initial release with core circular mapping functionality 
+**Version v0.1.0**: Initial release with core circular mapping functionality 
 
 ---
 

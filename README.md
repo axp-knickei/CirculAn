@@ -1,3 +1,7 @@
+[![DOI](https://zenodo.org/badge/1152568231.svg)](https://doi.org/10.5281/zenodo.18522435)
+
+https://zenodo.org/badge/1152568231.svg
+
 # Circular Genome Mapping & Functional Annotation Pipeline
 
 A comprehensive and user-friendly toolkit designed specifically for researchers working with bacterial genomes. This pipeline creates publication-quality circular genome visualizations and functional annotation analyses.
@@ -286,13 +290,13 @@ This standardized system enables meaningful comparisons between different bacter
 If you use this toolkit in your research, please cite:
 
 ```
-@software{netpharmpy2025,
+@software{CirculAn2025,
   author = {Alex Prima},
   title = {CirculAn: CirculAn: An automated Python toolkit for high-resolution circular genome mapping and functional annotation visualization},
   year = {2026},
   url = {https://github.com/axp-knickei/CirculAn},
   version = {0.1.0},
-  doi={doi.org/10.xxx/zenodo.xxx}
+  doi={doi.org/10.5281/zenodo.18522435}
 }
 ```
 
@@ -311,7 +315,7 @@ This project is released under the MIT License, allowing for both academic and c
 
 ## 👥 About This Project
 
-**Developed by**: Alex
+**Developed by**: Alex  
 **Development Period**: 2026  
 **Purpose**: Learning to make genome mapping of whole genome sequence  
 **Target Users**:   

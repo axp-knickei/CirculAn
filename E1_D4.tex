@@ -1,0 +1,31 @@
+% Requires: \usepackage{booktabs} in preamble
+\begin{table*}[htbp]
+\centering
+\caption{Summary of assembly and annotation features for LAB strains \textbf{E1} and \textbf{D4}.}
+\label{tab:genome-features-E1-D4}
+\small
+\begin{tabular}{lrr}
+\toprule
+Feature & E1 & D4 \\
+\midrule
+Genome size (bp) & 3,114,003 & 3,156,065 \\
+G+C content (\%) & 46.19 & 46.15 \\
+Contig N50 (bp) & 86,629 & 78,029 \\
+Contig L50 & 11 & 12 \\
+Number of contigs & 166 & 195 \\
+Number of protein-coding sequences (CDSs) & 2,934 & 2,972 \\
+Number of rRNAs & 12 & 12 \\
+Number of tRNAs & 111 & 111 \\
+Genes related to adhesion (candidate loci)$^{a}$ & 18 & 18 \\
+Bacteriocin-related candidate loci$^{a}$ & 13 & 14 \\
+Virulence / disease / defense candidate loci$^{a}$ & 52 & 54 \\
+AMR hits (AMRFinder)$^{b}$ & 1 & 1 \\
+\bottomrule
+\end{tabular}
+
+\vspace{4pt}
+\begin{minipage}{0.95\textwidth}
+\footnotesize
+\textbf{Notes.} Numbers are produced from strain-specific files (E1: \texttt{E1\_contig.fasta}, \texttt{E1\_func\_anno.xlsx}, \texttt{E1\_Geno\_Anno\_*.csv}; D4: \texttt{D4\_contig.fasta}, \texttt{D4\_func\_anno.xlsx}, \texttt{D4\_Geno\_Anno\_*.csv}). Candidate loci counts ($^{a}$) were identified by keyword search of the annotation text and are reported as unique \texttt{Prokka\_ID} matches (deduplicated across annotation files). AMR hits ($^{b}$) were taken from the AMRFinder CSV output. See Methods for full provenance and caveats.
+\end{minipage}
+\end{table*}
